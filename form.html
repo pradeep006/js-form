@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./form.css">
+    <script src="./form.js"></script>
+</head>
+
+<body>
+    <div class="section">
+        <div class="form">
+            <h2>Registration Form</h2>
+            <div class="input">
+                <input type="text" id="name" placeholder="Name"><br>
+                <p id="nerr"></p>
+            </div>
+            <div class="input">
+                <input type="email" id="email" placeholder="Email"></label><br>
+                <p id="nerr1"></p>
+            </div>
+            <div class="input">
+                <input type="tel" id="pnumber" placeholder="Phone Number"></label><br>
+                <p id="nerr2"></p>
+            </div>
+            <div class="input">
+                <input type="password" id="password" placeholder="Password"></label><br>
+                <p id="nerr3"></p>
+            </div>
+            <div class="input">
+                <input type="password" id="password2" placeholder="Re-type Password"></label><br>
+                <p id="nerr4"></p>
+            </div>
+            <div class="input">
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="Male">Male
+                <input type="radio" id="female" name="gender" value="Female">Female
+                <input type="radio" id="others" name="gender" value="Others">Others
+                <p id="err5"></p>
+            </div>
+
+            <div class="input">
+                <input type="checkbox" id="check">
+                <label for="checkbox">I accept terms and conditions.</label>
+                <p id="err6"></p>
+            </div>
+            <div class="input">
+                <select id="course" >
+                    <option value="please">Please select</option>
+                    <option value="web">Web Development</option>
+                    <option value="ios">iOS Development</option>
+                    <option value="mob">Mobile Development</option>
+                </select><br>
+                <p id="err7"></p>
+            </div>
+            <button onclick="valids()">Register</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
